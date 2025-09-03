@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="styles/style.css">
+    </head>
+<body>
+   <header>
+      <h1>Welcome to My interactive Web Page</h1>   
+      <p>A demonstration of interactive features and custom form validation</p>
+    </header>
+    <main>
+        <section id="Form-section">
+            <h2>Custom Form Validation</h2>
+            <form id ="myForm">
+                <div class ="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="e.g john@gmail.com">
+                    <div class="error-message" id="emailError"></div>
+                </div>
+                <div class ="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Atleast 6 characters">
+                    <div class="error-message" id="passwordError"></div>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id ="Upload-section">
+            <h2>Drag and Drop File Upload</h2>
+            <p>Drag and drop your files (CVs and Certificates) here or click to upload</p>
+            <div id ="drop-area">
+                <p>Drop files here</p>
+                <input type="file" id="fileElem" multiple accept=".pdf,.doc," style="display:none">
+                <label for="fileElem"> or Click to Upload</label>
+            </div>
+            <ul id="file-List"></ul>
+        </section>
+        <section id="Theme-toggle-section">
+            <h2>Dark Mode Toggle</h2>
+            <p>Click the button to switch between light and dark theme</p>
+            <label class="switch">
+                <input type="checkbox" id="darkModeToggle">
+                <span class="slider round"></span>
+            </label>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Interactive Web Page</p>
+    </footer>
+    <script src="js script js/script.js"></script>
+</body>
+</html>
+
+    
